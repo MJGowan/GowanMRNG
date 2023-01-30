@@ -1,11 +1,25 @@
 body {
-    background-color:rgb(143, 184, 159);
+    background-image: url('../assets/beep.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
 }
 .title{
     font-family: fantasy;
+    font-size:xx-large;
 }
 .injection{
     font-size:large;
     font-family: fantasy;
     font-weight:lighter;
+}
+.maddieBtn{
+    border-radius: 2px;
+    background-color:rgb(179, 107, 81);
+    color:white;
+}
+.maddieTable{
+    background-color:rgba(216, 129, 97, 0.792);
+    color:white;
+    border-radius: 2px;
 }
