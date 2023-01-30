@@ -21,23 +21,30 @@ fetch('./data.json').then(response => response.json()).then(
             
             function generate(){
                 let rndNum = Math.floor(Math.random() * students.length);
-                injectHere.innerHTML = students[rndNum].name; 
+                let displayName = students[rndNum].name;
+                fivePeople(displayName);
+            }
+            
+            function fivePeople(displayName){
+
+                // the "" could be replaced with undefined, both work
+                if(personFour.innerText != ""){
+                    personFive.innerText = personFour.innerText;
+                }
+                if(personThree.innerText != ""){
+                    personFour.innerText = personThree.innerText;
+                }
+                if(personTwo.innerText != ""){
+                    personThree.innerText = personTwo.innerText;
+                }
+                if(personOne.innerText != ""){ 
+                    personTwo.innerText = personOne.innerText;
+                }
+                    personOne.innerText = displayName;
+                
+                injectHere.innerHTML = displayName;
             }
         })
-
-
-        
-    
-
-
-
-
-
-
-
-
-
-
 
 
 

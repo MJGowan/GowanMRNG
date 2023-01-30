@@ -1,3 +1,11 @@
 body {
     background-color:rgb(143, 184, 159);
 }
+.title{
+    font-family: fantasy;
+}
+.injection{
+    font-size:large;
+    font-family: fantasy;
+    font-weight:lighter;
+}
